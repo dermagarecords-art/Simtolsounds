@@ -8,7 +8,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return release
     ? {
         title: release.title,
-        description: "EU, a four-track compilation by Atmaji Pragiwaksono, Egi Hisni, Alfian Adzani, and Alyuadi. Released by Simtol Sounds in Bandung.",
+        description: "EU, a four-track compilation by Atmaji Pradjnawicaksana, Egi Hisni, Alfian Adzani, and Alyuadi. Released by Simtol Sounds in Bandung.",
+        alternates: {
+          canonical: `https://simtolsounds.site/catalogue/${release.slug}`,
+        },
         openGraph: { title: `${release.title} — Simtol Sounds`, images: [{ url: release.coverImage, width: 900, height: 900, alt: `${release.title} by Simtol Sounds` }] },
       }
     : { title: "Release unavailable" };
