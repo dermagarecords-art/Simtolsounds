@@ -17,10 +17,10 @@ type Props = {
 };
 
 const axes = [
-  { x: 359, y: 58, startX: 486, startY: 342, lineX: 379, lineY: 115, head: "357,144 359,58 404,128 379,115" },
-  { x: 641, y: 58, startX: 514, startY: 342, lineX: 621, lineY: 115, head: "643,144 641,58 596,128 621,115" },
-  { x: 359, y: 692, startX: 486, startY: 410, lineX: 379, lineY: 635, head: "357,606 359,692 404,622 379,635" },
-  { x: 641, y: 692, startX: 514, startY: 410, lineX: 621, lineY: 635, head: "643,606 641,692 596,622 621,635" },
+  { x: 344, y: 44, startX: 482, startY: 334, lineX: 360, lineY: 105, head: "342,135 344,44 392,118 366,104" },
+  { x: 656, y: 44, startX: 518, startY: 334, lineX: 640, lineY: 105, head: "658,135 656,44 608,118 634,104" },
+  { x: 344, y: 706, startX: 482, startY: 418, lineX: 360, lineY: 645, head: "342,615 344,706 392,632 366,646" },
+  { x: 656, y: 706, startX: 518, startY: 418, lineX: 640, lineY: 645, head: "658,615 656,706 608,632 634,646" },
 ];
 
 export function UnionDiagram({ release, activeTrack, progress, amplitude, onStop, scrollMotion, visualConfig, reducedMotion }: Props) {
@@ -64,7 +64,7 @@ export function UnionDiagram({ release, activeTrack, progress, amplitude, onStop
           const active = activeTrack === track.number;
           const markerX = 500 + (axis.x - 500) * progress;
           const markerY = 376 + (axis.y - 376) * progress;
-          const figureTransform = `translate(${index === 0 ? 250 : index === 1 ? 590 : index === 2 ? 252 : 590} ${index < 2 ? 152 : 386}) scale(${1 + (active ? amplitude * 0.08 : 0)})`;
+          const figureTransform = `translate(${index === 0 ? 220 : index === 1 ? 600 : index === 2 ? 220 : 600} ${index < 2 ? 150 : 386}) scale(${1 + (active ? amplitude * 0.08 : 0)})`;
           return (
             <g key={track.number} className={`diagram-figure-track ${active ? "is-active" : ""}`}>
               <g className="figure" transform={figureTransform} style={{ transformBox: "fill-box", transformOrigin: "center" }}>
