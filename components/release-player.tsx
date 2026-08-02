@@ -170,7 +170,6 @@ export function ReleasePlayer({ release, releasePage = false }: Props) {
       <MeltingCoverBackground coverImage={release.coverImage} config={visualConfig} scrollMotion={scrollMotion} audioEnergyRef={audioEnergyRef} reducedMotion={reducedMotion} />
       <Header catalogueNumber={release.catalogueNumber} title={release.title} />
       <section className="listening-field" aria-label={`${release.title} interactive player`}>
-        <div className="release-identity"><span>{release.label}</span><span>{release.location}</span></div>
         <div className="track-stage">
           <UnionDiagram release={release} activeTrack={activeTrack} progress={progress} amplitude={amplitude} onStop={stop} scrollMotion={scrollMotion} visualConfig={visualConfig} reducedMotion={reducedMotion} />
           {release.tracks.map((track) => {
