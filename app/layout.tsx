@@ -8,13 +8,10 @@ export const metadata: Metadata = {
     default: "Simtol Sounds",
     template: "%s — Simtol Sounds",
   },
-  alternates: {
-    canonical: "/",
-  },
-  description: "EU, a four-track compilation by Atmaji Pragiwaksono, Egi Hisni, Alfian Adzani, and Alyuadi. Released by Simtol Sounds in Bandung.",
+  description: "EU, a four-track compilation by Atmaji Pradjnawicaksana, Egi Hisni, Alfian Adzani, and Alyuadi. Released by Simtol Sounds in Bandung.",
   openGraph: {
     title: "Simtol Sounds",
-    description: "EU, a four-track compilation by Atmaji Pragiwaksono, Egi Hisni, Alfian Adzani, and Alyuadi. Released by Simtol Sounds in Bandung.",
+    description: "EU, a four-track compilation by Atmaji Pradjnawicaksana, Egi Hisni, Alfian Adzani, and Alyuadi. Released by Simtol Sounds in Bandung.",
     url: "/",
     siteName: "Simtol Sounds",
     locale: "en_ID",
@@ -24,7 +21,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Simtol Sounds",
-    description: "EU, a four-track compilation by Atmaji Pragiwaksono, Egi Hisni, Alfian Adzani, and Alyuadi. Released by Simtol Sounds in Bandung.",
+    description: "EU, a four-track compilation by Atmaji Pradjnawicaksana, Egi Hisni, Alfian Adzani, and Alyuadi. Released by Simtol Sounds in Bandung.",
     images: ["/images/releases/eu/cover.jpg"],
   },
 };
