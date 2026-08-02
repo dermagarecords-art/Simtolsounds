@@ -4,7 +4,7 @@ export const releases: Release[] = [
   {
     slug: "eu",
     title: "EU",
-    catalogueNumber: "SR-001",
+    catalogueNumber: "SS-001",
     coverImage: "/images/releases/eu/cover.jpg",
     year: "2026",
     location: "Bandung, Indonesia",
@@ -25,7 +25,7 @@ export const releases: Release[] = [
     tracks: [
       {
         number: "01",
-        artist: "Atmaji Pragiwaksono",
+        artist: "Atmaji Pradjnawicaksana",
         title: "Another Graphic Imbalance",
         audioSource: "/audio/eu/01-another-graphic-imbalance.mp3",
         direction: "northwest",
@@ -35,7 +35,7 @@ export const releases: Release[] = [
       {
         number: "02",
         artist: "Egi Hisni",
-        title: "Nyong Ba",
+        title: "NYONG BA-",
         audioSource: "/audio/eu/02-nyong-ba.mp3",
         direction: "northeast",
         blobPath:
@@ -44,7 +44,7 @@ export const releases: Release[] = [
       {
         number: "03",
         artist: "Alfian Adzani",
-        title: "Gore Jat",
+        title: "Gore-Jat",
         audioSource: "/audio/eu/03-gore-jat.mp3",
         direction: "southwest",
         blobPath:
@@ -53,7 +53,7 @@ export const releases: Release[] = [
       {
         number: "04",
         artist: "Alyuadi",
-        title: "Mencari",
+        title: "mencari",
         audioSource: "/audio/eu/04-mencari.mp3",
         direction: "southeast",
         blobPath:
