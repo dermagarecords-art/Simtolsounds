@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { gotham } from "./fonts";
+import { simtolFaviconImage } from "@/data/brandAssets";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://simtolsounds.site"),
@@ -23,6 +24,11 @@ export const metadata: Metadata = {
     title: "Simtol Sounds",
     description: "EU, a four-track compilation by Atmaji Pradjnawicaksana, Egi Hisni, Alfian Adzani, and Alyuadi. Released by Simtol Sounds in Bandung.",
     images: ["/images/releases/eu/cover.jpg"],
+  },
+  icons: {
+    icon: simtolFaviconImage,
+    shortcut: simtolFaviconImage,
+    apple: simtolFaviconImage,
   },
 };
 
